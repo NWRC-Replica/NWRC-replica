@@ -1,0 +1,161 @@
+/* Body styling */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header styling */
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fffef5;
+    color: #6500a8;
+    z-index: 1000;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 0%;
+}
+
+/* Top navigation bar styling */
+.topnav {
+    overflow: hidden;
+    background-color: #dddbdb;
+    padding:1%;
+    margin-top: 0%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 0%;
+}
+
+.topnav a {
+    float: inline-start;
+    color: #4c0094;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.topnav a:hover {
+    background-color: #ebebeb;
+    color: rgb(255, 94, 0);
+}
+
+.topnav a.active {
+    text-decoration: underline;
+}
+
+/* Wrapper for image and text */
+.wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+}
+
+/* Image styling */
+.image {
+    max-width: 15%;
+    height: auto;
+    padding-right: 1%;
+    padding-left: 1%;
+    padding-top: 0;
+}
+
+/* Text styling for H1 */
+.text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #6500a8;
+    margin: 0;
+}
+
+/* Banner styling */
+.banner {
+    display: block;
+    padding-right: 1%;
+    padding-left: 3%;
+}
+
+.body {
+    display: block;
+    padding-right: 1%;
+    padding-left: 5%;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive design for tablets */
+@media (max-width: 1024px) {
+    .text h1 {
+        font-size: 2rem;
+        padding-top: 10px;
+    }
+
+    .topnav a {
+        font-size: 1.3rem;
+    }
+
+    .image {
+        max-width: 20%;
+    }
+
+    .banner {
+        padding-left: 3%; 
+    }
+
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image, .text {
+        max-width: 100%;
+    }
+
+    .text h1 {
+        font-size: 1.8rem;
+        text-align: left;
+        padding-left: 3%;
+        padding-top: 10px;
+    }
+
+    .topnav a {
+        font-size: 1.1rem;
+        padding: 2%;
+    }
+
+    .banner {
+        padding-left: 3%; 
+    }
+}
+
+/* Responsive design for phones */
+@media (max-width: 480px) {
+    .text h1 {
+        font-size: 1.5rem;
+        text-align: left;
+        padding-left: 3%;
+        padding-bottom: 2%;
+    }
+
+    .topnav a {
+        font-size: 1.2rem;
+        padding: 2%;
+    }
+
+    .banner {
+        padding-left: 3%; 
+    }
+}
