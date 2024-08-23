@@ -2,6 +2,11 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+}
+
+.container {
+    margin: 0 auto;
 }
 
 /* Header styling */
@@ -10,6 +15,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    bottom: 0;
     background-color: #fffef5;
     color: #6500a8;
     z-index: 1000;
@@ -21,6 +27,7 @@ header {
 
 /* Top navigation bar styling */
 .topnav {
+    position: sticky;
     overflow: hidden;
     background-color: #dddbdb;
     padding:1%;
@@ -59,6 +66,7 @@ header {
 
 /* Image styling */
 .image {
+    bottom: 0;
     max-width: 15%;
     height: auto;
     padding-right: 1%;
@@ -79,6 +87,7 @@ header {
     display: block;
     padding-right: 1%;
     padding-left: 3%;
+    padding-top: 2%;
 }
 
 .body {
@@ -94,6 +103,10 @@ header {
 
 /* Responsive design for tablets */
 @media (max-width: 1024px) {
+    .image {
+        max-width: 20%;
+    }
+
     .text h1 {
         font-size: 2rem;
         padding-top: 10px;
@@ -101,10 +114,6 @@ header {
 
     .topnav a {
         font-size: 1.3rem;
-    }
-
-    .image {
-        max-width: 20%;
     }
 
     .banner {
@@ -115,17 +124,12 @@ header {
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
-    .wrapper {
-        flex-direction: column;
-        text-align: center;
+    .image {
+        max-width: 25%;
     }
-
-    .image, .text {
-        max-width: 100%;
-    }
-
+    
     .text h1 {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
         text-align: left;
         padding-left: 3%;
         padding-top: 10px;
@@ -136,26 +140,52 @@ header {
         padding: 2%;
     }
 
+    .wrapper {
+        flex-direction: row;
+        text-align: center;
+    }
+
     .banner {
         padding-left: 3%; 
+    }
+
+    .body { 
+        font-size: 1rem;
     }
 }
 
 /* Responsive design for phones */
 @media (max-width: 480px) {
+    .image {
+        max-width: 25%;
+        object-fit: cover;
+    }
+    
     .text h1 {
-        font-size: 1.5rem;
+        font-size: 1rem;
         text-align: left;
         padding-left: 3%;
         padding-bottom: 2%;
     }
 
     .topnav a {
-        font-size: 1.2rem;
+        font-size: 1rem;
+        display: flex; 
         padding: 2%;
     }
 
     .banner {
         padding-left: 3%; 
     }
+
+    .body { 
+        font-size: 1rem;
+    }
+}
+
+#sponsors {
+    padding-left: 40px;
+    width: auto;
+    height: 70px;
+    object-fit: contain;
 }
