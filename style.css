@@ -42,6 +42,8 @@ footer {
     float: left;
     width: 33.33%;
     font-size: 1rem;
+    white-space:normal;
+    word-wrap: break-word;
 }
 
 .row:after {
