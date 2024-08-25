@@ -25,6 +25,56 @@ header {
     padding-bottom: 0%;
 }
 
+/* Footer styling */
+footer {
+    background-color:#dddbdb;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 4%;
+    margin-left: 3%;
+    margin-right: 1%;
+    margin-bottom: 4%;
+    
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.left{
+    text-align:left;
+    float:left;
+}
+.right{
+    float:right;
+    text-align:right;
+}
+.centered{
+    text-align:center;
+}
+
+table, th, td {
+    margin-right: 1%;
+    margin-left: 3%;
+    margin-bottom: 3%;
+    padding: 1%;
+    text-align: left;
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #dddbdb;
+}
+
 /* Top navigation bar styling */
 .topnav {
     position: sticky;
@@ -79,6 +129,12 @@ header {
     font-size: 2.5rem;
     font-weight: bold;
     color: #6500a8;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color:#4c0094;
     margin: 0;
 }
 
@@ -150,7 +206,11 @@ header {
     }
 
     .body { 
-        font-size: 1rem;
+        font-size: 1.1rem;
+    }
+
+    .footer { 
+        font-size: 1.1rem;
     }
 }
 
@@ -181,6 +241,11 @@ header {
     .body { 
         font-size: 1rem;
     }
+
+    .footer {
+        font-size: 1rem;
+    }
+
 }
 
 #sponsors {
